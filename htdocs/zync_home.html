@@ -5,7 +5,7 @@
         <title>Zync</title>
         <link rel = "icon" href = "" type = "image/icon type">
         <link rel = "stylesheet" href = "../styles/zync_home.css">
-        
+        <script src = "../js/restart.js"></script>
     </head>
 
     <body class = "bg">
@@ -21,6 +21,7 @@
             <div> 
                 <button class = "hvr-underline-from-left" onclick="document.getElementById('player').play()">Play</button> 
                 <button class = "hvr-underline-from-left" onclick="document.getElementById('player').pause()">Pause</button>
+                <button class = "hvr-underline-from-left" onClick="document.getElementById('player').currentTime = 0">Restart</button>
                 <!-- <button class = "hvr-underline-from-left" onclick="document.getElementById('player').volume += 0.1">Vol+</button> 
                 <button class = "hvr-underline-from-left" onclick="document.getElementById('player').volume -= 0.1">Vol-</button> -->
             </div>
