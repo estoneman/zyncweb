@@ -27,10 +27,32 @@ nav {
     padding: 20px;
     opacity: 50%;
     position: sticky;
-    border: 2px outset rgba(237, 233, 221, .5);
-    background-color: rgba(237, 233, 221, .2);
+    /* border: 2px outset rgba(237, 233, 221, .5); */
+    /* background-color: rgba(237, 233, 221, .2); */
+    border-bottom: 1px solid #7F6B80;
+    background-image: linear-gradient(to top, rgba(237, 233, 221, .5), rgba(237, 233, 221, 0));
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    /* border-image: linear-gradient(to top, rgba(237, 233, 221, .5) , rgba(237, 233, 221, 0));
+    border-image-slice: 1; */
+}
+
+#playlists {
+    border-right: 1px solid black;
+    padding-right: 13px;
+}
+
+#about {
+    padding-left: 13px;
+}
+
+#forms {
+    border-right: 1px solid black;
+    padding-right: 13px;
+}
+
+#contact {
+    padding-left: 13px;
 }
 
 #logo {
@@ -45,7 +67,7 @@ nav a {
     text-decoration: none;
     letter-spacing: 10px;
     opacity: 100%;
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 .hvr-underline-from-left {
@@ -54,6 +76,7 @@ nav a {
     position: relative;
     overflow: hidden;
 }
+
 .hvr-underline-from-left:before {
     content: "";
     position: absolute;
@@ -67,9 +90,10 @@ nav a {
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
   }
+
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
-  }
+}
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
