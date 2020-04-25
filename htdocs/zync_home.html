@@ -5,37 +5,57 @@
         <title>Zync</title>
         <link rel = "icon" href = "" type = "image/icon type">
         <link rel = "stylesheet" href = "../styles/zync_home.css">
+        <audio id = "player" src = "../music/Flume - Sleepless feat. Jezzabell Doran.mp3"></audio>
     </head>
 
     <body class = "bg">
 
-        <nav>
-            <!--List of pages and logo on nav bar-->
-            <a href = "" id = "playlists" class = "hvr-underline-from-left">Playlists</a>
-            &emsp;&emsp;&emsp;&emsp;
-            <a href = "about.html" id = "about" class = "hvr-underline-from-left">About</a>
-            &emsp;&emsp;&emsp;&emsp;
-            <a id = "logo">Zync</a>
-            &emsp;&emsp;&emsp;&emsp;
-            <a href = "forms.html" id = "forms" class = "hvr-underline-from-left">Forms</a>
-            &emsp;&emsp;&emsp;&emsp;
-            <a id = "contact" href = "" class = "hvr-underline-from-left">Contact</a>
+        <nav style = "text-align: center;">
 
-            <!--Handles playing audio file in background-->
-            <audio id = "player" src = "../music/Flume - Sleepless feat. Jezzabell Doran.mp3"></audio>
-            <div> 
-                <button class = "hvr-underline-from-left" onclick="document.getElementById('player').play()">Play</button> 
-                <button class = "hvr-underline-from-left" onclick="document.getElementById('player').pause()">Pause</button>
-                <button class = "hvr-underline-from-left" onClick="document.getElementById('player').currentTime = 0">Restart</button>
-            </div>
-
-            <br>
+            <ul style = "padding: 0px;">
+                <li class = "elem"><a href = "" class = "hvr-underline-from-left">Playlists</a></li>
+                &emsp;&emsp;&emsp;&emsp;
+                <li class = "elem"><a href = "" class = "hvr-underline-from-left">About</a></li>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <li class = "logo">
+                    <div style = "display: inline;">
+                        <a id = "logo">Zync</a>
+                    </div>
+                </li>
+                &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                <li class = "elem"><a href = "" class = "hvr-underline-from-left">Forms</a></li>
+                &emsp;&emsp;&emsp;&emsp;
+                <li class = "elem"><a href = "" class = "hvr-underline-from-left">Contact</a></li>
+            </ul>
 
         </nav>
 
         <main>
 
             <br><br>
+            <li></li>
+
+            <section class = "music">
+                <p>Favorites</p>
+                <ul>
+                    <li>
+                        <button onclick="document.getElementById('player').play()">
+                            <img src = "../img/play_button.png" id = "play">
+                        </button>
+                    </li> 
+                    <li>
+                        <button onclick="document.getElementById('player').pause()">
+                            <img src = "../img/pause_button.png" id = "pause">
+                        </button>
+                    </li>
+                    <li>
+                        <button onClick="document.getElementById('player').currentTime = 0">
+                            <img src = "../img/restart_button.png" id = "restart">
+                        </button>
+                    </li>
+                </ul>
+
+            </section>
 
             <!-- <section class = "join">
                 <h2>Join the movement today</h2>
