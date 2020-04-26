@@ -44,10 +44,13 @@ body, html {
 
 nav {
     /* background-image: linear-gradient(to top,rgba(233, 235, 221, .25), rgba(233, 235, 221, 0)); */
+    background-color: rgba(255, 255, 255, .5);
     padding-bottom: 7px;
-    border-bottom: solid;
     border-color: white;
-    border-style: dashed;
+    border-style: solid;
+    border-radius: 30px;
+    /* border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px; */
 }
 
 #logo {
@@ -66,7 +69,7 @@ li a {
     text-decoration: none;
     color: white;
     letter-spacing: 7px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /*end navbar*/
@@ -74,22 +77,23 @@ li a {
 /*audio controls*/ 
 
 .music {
-    display: block;
     width: 300px;
-    height: 315px;
+    height: 430px;
     border-style: solid;
-    border-color: #9c6e87;
-    background-color: white;
-    color: #9c6e87;
+    border-color: white;
+    border-radius: 30px;
+    color: white;
     opacity: 70%;
-}
-
-.music p {
-    padding-left: 5px;
+    position: relative;
+    top: 70px;
+    background-color: rgba(255, 255, 255, .5);
+    text-align: center;
 }
 
 .music ul {
     margin-left: 0px;
+    display: inline-block;
+    padding-inline-start: 0px;
 }
 
 ul li {
@@ -116,7 +120,7 @@ button:focus {
 }
 
 #pause {
-    width: 35px;
+    width: 20px;
     height: 20px;
 }
 
