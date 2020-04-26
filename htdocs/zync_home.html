@@ -3,9 +3,12 @@
 <html>
     <head>
         <title>Zync</title>
-        <link rel = "icon" href = "" type = "image/icon type">
+        <link rel = "icon" href = "../img/favicon.png" type = "image/icon type">
         <link rel = "stylesheet" href = "../styles/zync_home.css">
-        <audio id = "player" src = "../music/Flume - Sleepless feat. Jezzabell Doran.mp3"></audio>
+        <audio id = "flume" src = "../music/Flume - Sleepless feat. Jezzabell Doran.mp3"></audio>
+        <audio id = "san" src = "../music/San Holo - Light.mp3"></audio>
+        <audio id = "rufus" src = "../music/Eyes_Rufus_Du_Sol.mp3"></audio>
+        <audio id = "diplo" src = "../music/On_My_Mind_Diplo.mp3"></audio>
     </head>
 
     <body class = "bg">
@@ -25,7 +28,7 @@
                 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
                 <li class = "elem"><a href = "" class = "hvr-underline-from-left">Forms</a></li>
                 &emsp;&emsp;&emsp;&emsp;
-                <li class = "elem"><a href = "" class = "hvr-underline-from-left">Contact</a></li>
+                <li class = "elem"><a href = "" class = "hvr-underline-from-left">Adventures</a></li>
             </ul>
 
         </nav>
@@ -33,23 +36,100 @@
         <main>
 
             <br><br>
-            <li></li>
 
             <section class = "music">
-                <p>Favorites</p>
+                <p>Sleepless</p>
                 <ul>
                     <li>
-                        <button onclick="document.getElementById('player').play()">
+                        <button onclick = "
+                            document.getElementById('flume').play();
+                            document.getElementById('san').pause();document.getElementById('san').currentTime = 0;
+                            document.getElementById('rufus').pause();document.getElementById('rufus').currentTime = 0;
+                            document.getElementById('diplo').pause();document.getElementById('diplo').currentTime = 0;
+                        ">
                             <img src = "../img/play_button.png" id = "play">
                         </button>
                     </li> 
                     <li>
-                        <button onclick="document.getElementById('player').pause()">
+                        <button onclick = "
+                            document.getElementById('flume').pause();">
                             <img src = "../img/pause_button.png" id = "pause">
                         </button>
                     </li>
                     <li>
-                        <button onClick="document.getElementById('player').currentTime = 0">
+                        <button onClick = "document.getElementById('flume').currentTime = 0;">
+                            <img src = "../img/restart_button.png" id = "restart">
+                        </button>
+                    </li>
+                </ul>
+                <p>Light</p>
+                <ul>
+                    <li>
+                        <button onclick = "
+                            document.getElementById('san').play();
+                            document.getElementById('flume').pause();document.getElementById('flume').currentTime = 0;
+                            document.getElementById('rufus').pause();document.getElementById('rufus').currentTime = 0;
+                            document.getElementById('diplo').pause();document.getElementById('diplo').currentTime = 0;
+                        ">
+                            <img src = "../img/play_button.png" id = "play">
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="document.getElementById('san').pause()">
+                            <img src = "../img/pause_button.png" id = "pause">
+                        </button>
+                    </li>
+                    <!--restart song by setting current time to 0 and play-->
+                    <li>
+                        <button onclick="document.getElementById('san').currentTime = 0;">
+                            <img src = "../img/restart_button.png" id = "restart">
+                        </button>
+                    </li>
+                </ul>
+                <p>Eyes</p>
+                <ul>
+                    <li>
+                        <button onclick = "
+                            document.getElementById('rufus').play();
+                            document.getElementById('san').pause();document.getElementById('san').currentTime = 0;
+                            document.getElementById('flume').pause();document.getElementById('flume').currentTime = 0;
+                            document.getElementById('diplo').pause();document.getElementById('diplo').currentTime = 0;
+                        ">
+                            <img src = "../img/play_button.png" id = "play">
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="document.getElementById('rufus').pause()">
+                            <img src = "../img/pause_button.png" id = "pause">
+                        </button>
+                    </li>
+                    <!--restart song by setting current time to 0 and play-->
+                    <li>
+                        <button onclick="document.getElementById('rufus').currentTime = 0;">
+                            <img src = "../img/restart_button.png" id = "restart">
+                        </button>
+                    </li>
+                </ul>
+                <p>On My Mind</p>
+                <ul>
+                    <li>
+                        <button onclick = "
+                            document.getElementById('diplo').play();
+                            document.getElementById('san').pause();document.getElementById('san').currentTime = 0;
+                            document.getElementById('rufus').pause();document.getElementById('rufus').currentTime = 0;
+                            document.getElementById('flume').pause();document.getElementById('flume').currentTime = 0;
+                        ">
+                            <img src = "../img/play_button.png" id = "play">
+                        </button>
+                    </li>
+                    <li>
+                        <button onclick="document.getElementById('diplo').pause()">
+                            <img src = "../img/pause_button.png" id = "pause">
+                        </button>
+                    </li>
+                    <!--restart song by setting current time to 0 and play-->
+                    <li>
+                        <button onclick="document.getElementById('diplo').currentTime = 0;">
                             <img src = "../img/restart_button.png" id = "restart">
                         </button>
                     </li>

@@ -45,7 +45,6 @@ body, html {
 nav {
     /* background-image: linear-gradient(to top,rgba(233, 235, 221, .25), rgba(233, 235, 221, 0)); */
     padding-bottom: 7px;
-    opacity: 50%;
     border-bottom: solid;
     border-color: white;
     border-style: dashed;
@@ -77,10 +76,20 @@ li a {
 .music {
     display: block;
     width: 300px;
-    height: 300px;
-    opacity: 50%;
-    border-style: dashed;
-    border-color: white;
+    height: 315px;
+    border-style: solid;
+    border-color: #9c6e87;
+    background-color: white;
+    color: #9c6e87;
+    opacity: 70%;
+}
+
+.music p {
+    padding-left: 5px;
+}
+
+.music ul {
+    margin-left: 0px;
 }
 
 ul li {
@@ -94,6 +103,11 @@ button {
     color: black;
     letter-spacing: 7px;
     border: none;
+    opacity: 100%;
+}
+
+button:focus {
+    outline: none;
 }
 
 #play {
