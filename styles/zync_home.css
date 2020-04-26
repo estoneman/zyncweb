@@ -76,8 +76,12 @@ li a {
 
 /*audio controls*/ 
 
+section {
+    display: inline-block;
+}
+
 .music {
-    width: 300px;
+    width: 150px;
     height: 430px;
     border-style: solid;
     border-color: white;
@@ -85,7 +89,7 @@ li a {
     color: white;
     opacity: 70%;
     position: relative;
-    top: 70px;
+    top: 17px;
     background-color: rgba(255, 255, 255, .5);
     text-align: center;
 }
