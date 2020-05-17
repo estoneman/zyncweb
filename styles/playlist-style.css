@@ -25,12 +25,12 @@ nav {
     margin-right: -9px;
     margin-top: -9px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: rgba(255, 255, 255, .6);
+ 
     letter-spacing: 15px;
     padding: 15px;
 }
 
-nav a[href] {
+#pages {
     color: rgba(0, 0, 0, .5);
     text-decoration: none;
     padding-left: 15px;
@@ -39,7 +39,7 @@ nav a[href] {
     margin-right: 50px;
 }
 
-nav a[href]:hover {
+#pages:hover {
     padding-bottom: 3px; 
 }
 
@@ -47,6 +47,8 @@ nav a[href]:hover {
     font-size: 70px;
     margin-left: 50px;
     margin-right: 50px;
+    color: rgba(255, 255, 255, .6);
+    text-decoration: none;
 }
 
 .hvr-underline-from-left {
@@ -71,23 +73,6 @@ nav a[href]:hover {
 
 .hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
     right: 0;
-}
-/*background*/
-body, html {
-    height: 100%;
-  }
-  
-.bg {
-    /* The image used */
-    background-image: url("../img/runaway_flume.png");
-
-    /* Full height */
-    height: 95%;
-
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 div button {
@@ -126,22 +111,8 @@ section {
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
 }
 
-.music ul {
-    margin-left: 0px;
-    display: block;
-    padding-inline-start: 0px;
-}
-
-ul li {
-    list-style: none;
-    display: inline-block;
-}
-
 button {
     background: none;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    letter-spacing: 7px;
     border: none;
     opacity: 100%;
 }
@@ -150,18 +121,12 @@ button:focus {
     outline: none;
 }
 
-#play {
-    width: 20px;
-    height: 20px;
+#next {
+    width: 30px;
+    height: 30px;
+    opacity: 100%;
 }
 
-#pause {
-    width: 20px;
-    height: 20px;
-    background-color: white;
-}
-
-#restart {
-    width: 20px;
-    height: 20px;
+audio:focus {
+    outline: none;
 }

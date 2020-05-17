@@ -17,11 +17,11 @@
     <body class = "bg">
 
         <nav>
-            <a href = "playlists.html" class = "hvr-underline-from-left">Playlists</a>
-            <a href = "about.html" class = "hvr-underline-from-left">About</a>
-            <a class = "logo">ZYNC</a>
-            <a href = "forms.html" class = "hvr-underline-from-left">Forms</a>
-            <a href = "contact.html" class = "hvr-underline-from-left">Contact</a>
+            <a href = "playlists.html" class = "hvr-underline-from-left" id = "pages">Playlists</a>
+            <a href = "about.html" class = "hvr-underline-from-left" id = "pages">About</a>
+            <a href = "index.html" class = "logo">ZYNC</a>
+            <a href = "forms.html" class = "hvr-underline-from-left" id = "pages">Forms</a>
+            <a href = "contact.html" class = "hvr-underline-from-left" id = "pages">Contact</a>
 
         </nav>
 
@@ -30,91 +30,15 @@
             <!-- <div class="runaway-flume" onclick = "document.getElementById('hi').play()"></div>
             <div class="runaway-flume-hide">hi, this is flume</div> -->
 
+            <p class = 'playlist-one'></p>
             <section class = "music">
-
-                <ul>
-                    <p>Sleepless</p>
-                    <li>
-                        <button class = "flume-play">
-                            <img src = "../img/play_button.png" id = "play">
-                        </button>
-                    </li> 
-                    <li>
-                        <button class = "flume-pause">
-                            <img src = "../img/pause_button.png" id = "pause">
-                        </button>
-                    </li>
-                    <!--<a target="_blank" href="https://icons8.com/icons/set/recurring-appointment">Reset icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>-->
-                    <li>
-                        <button class = "flume-restart">
-                            <img src = "../img/restart_button.png" id = "restart">
-                        </button>
-                    </li>
-                </ul>
-                <ul>
-                    <p>Light</p>
-                    <li>
-                        <button class = "san-play">
-                            <img src = "../img/play_button.png" id = "play">
-                        </button>
-                    </li>
-                    <li>
-                        <button class = "san-pause">
-                            <img src = "../img/pause_button.png" id = "pause">
-                        </button>
-                    </li>
-                    <!--restart song by setting current time to 0 and play-->
-                    <li>
-                        <button class = "san-restart">
-                            <img src = "../img/restart_button.png" id = "restart">
-                        </button>
-                    </li>
-                </ul>
-                <ul>
-                    <p>Eyes</p>
-                    <li>
-                        <button class = "rufus-play">
-                            <img src = "../img/play_button.png" id = "play">
-                        </button>
-                    </li>
-                    <li>
-                        <button class = "rufus-pause">
-                            <img src = "../img/pause_button.png" id = "pause">
-                        </button>
-                    </li>
-                    <!--restart song by setting current time to 0 and play-->
-                    <li>
-                        <button class = "rufus-restart">
-                            <img src = "../img/restart_button.png" id = "restart">
-                        </button>
-                    </li>
-                </ul>
-                <ul>
-                    <p>On My Mind</p>
-                    <li>
-                        <button class = "diplo-play">
-                            <img src = "../img/play_button.png" id = "play">
-                        </button>
-                    </li>
-                    <li>
-                        <button class = "diplo-pause">
-                            <img src = "../img/pause_button.png" id = "pause">
-                        </button>
-                    </li>
-                    <!--restart song by setting current time to 0 and play-->
-                    <li>
-                        <button class = "diplo-restart">
-                            <img src = "../img/restart_button.png" id = "restart">
-                        </button>
-                    </li>
-                </ul>
-            
+                <audio controls autoplay></audio>
+                <button class = "next"><img src = "../img/next_button.png" id = "next"></button>
             </section>
-            
 
         </main>
 
-        <script src = "../js/player.js"></script>
+        <script src = "../js/audio-player.js"></script>
 
     </body>
 
